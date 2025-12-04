@@ -7,12 +7,15 @@ on:
 jobs:
   hello:
     runs-on: ubuntu-latest
+
     steps:
       - name: Saludo
-        run: echo "Hola, mi nombre es Jessica Iveth Paz Dubon"
+        run: |
+          echo "Hola, mi nombre es Jessica Iveth Paz Dubon"
 
       - name: Fecha y hora actual
         run: date
 
       - name: Sistema operativo
-        run: echo "Sistema operativo: $RUNNER_OS"
+        run: |
+          echo "Sistema operativo: $RUNNER_OS"
